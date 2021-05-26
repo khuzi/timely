@@ -6,7 +6,7 @@ import prnt from "../../../assets/img/print.png";
 export function TimeSelect({ none }) {
   if (none) {
     return (
-      <div className="time-top-right-fl d-none">
+      <div className="time-top-right-fl d-none w-100">
         <div className="time-top-right-lf">
           <div className="time-top-right-lf-title">
             <h3>Show</h3>

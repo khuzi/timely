@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 
 import { Layout } from "./components";
-import { HomePage, Login, Time1 } from "./pages";
+import { HomePage, Login, Time1, Time5, Time6, Time9 } from "./pages";
 
 import "./assets/css/all.min.scss";
 import "./assets/css/default.scss";
@@ -28,6 +28,15 @@ export default function App() {
             </Route>
             <Route path="/time1">
               <Time1 />
+            </Route>
+            <Route path="/time5">
+              <Time5 />
+            </Route>
+            <Route path="/time6">
+              <Time6 />
+            </Route>
+            <Route path="/time9">
+              <Time9 />
             </Route>
           </Switch>
         </Layout>
