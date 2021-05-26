@@ -8,6 +8,8 @@ import "./assets/css/all.min.scss";
 import "./assets/css/default.scss";
 import "./assets/css/style.scss";
 import "./assets/css/responsive.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function App() {
   const history = useHistory();

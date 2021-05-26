@@ -801,7 +801,9 @@ button {
   margin: 0;
 }
 .time-table {
+  margin-top: 1rem;
   border-bottom: 1px solid #f6f6f6;
+  border-top: 2px solid #f6f6f6;
 }
 .time-last-list {
   display: flex;
@@ -2260,39 +2262,14 @@ button {
   display: flex;
 }
 
-.time-table-top.tine-tab-slider.owl-carousel.owl-loaded.owl-drag {
-  width: 50px;
+.time-table-top.tine-tab-slider {
+  width: 100px;
+  border-radius: 9px;
 }
 
-.time-table-top.tine-tab-slider.owl-carousel.owl-loaded.owl-drag .owl-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -56px;
-  height: 100%;
-  display: flex;
-  width: 50px;
+.time-table-top.tine-tab-slider div h3 {
+  width: 90px;
   border: 1px solid #dee9ff;
-  border-radius: 9px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.time-table-top.tine-tab-slider.owl-carousel.owl-loaded.owl-drag .owl-dots {
-  display: none;
-}
-.time-table-top.tine-tab-slider.owl-carousel.owl-loaded.owl-drag
-  .owl-nav
-  button {
-  border-bottom: 1px solid #dee9ff;
-  width: 86%;
-  height: 100%;
-}
-.time-table-top.tine-tab-slider.owl-carousel.owl-loaded.owl-drag
-  .owl-nav
-  button:last-child {
-  border: 0;
 }
 
 .time-table-btn.d2 a {

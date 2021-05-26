@@ -23,9 +23,9 @@ export function Time1() {
               </div>
             </div>
           </div>
-          <Time1Table />
         </div>
       </div>
+      <Time1Table />
     </>
   );
 }
