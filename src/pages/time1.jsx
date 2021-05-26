@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Humbarger, TimeSelect } from "../components";
+import { Humbarger, TimeSelect, Time1Table } from "../components";
 
 export function Time1() {
   return (
@@ -23,6 +23,7 @@ export function Time1() {
               </div>
             </div>
           </div>
+          <Time1Table />
         </div>
       </div>
     </>
