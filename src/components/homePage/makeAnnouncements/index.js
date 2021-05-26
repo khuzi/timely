@@ -31,25 +31,7 @@ export function MakeAnnouncements() {
         </div>
         <div className="make-send">
           <div className="make-select">
-            {/* <select>
-              <option data-display="All">All</option>
-              <option value="1">Some option</option>
-              <option value="2">Another option</option>
-              <option value="3">A disabled option</option>
-              <option value="4">Potato</option>
-            </select> */}
-            <div style={{ width: "70%", marginRight: "1rem" }}>
-              <InputDropdown
-                options={[
-                  { value: "all", label: "All" },
-                  { value: "1", label: "Some option" },
-                  { value: "2", label: "Another option" },
-                  { value: "3", label: "A Disabled option" },
-                  { value: "4", label: "Potato" },
-                ]}
-              />
-            </div>
-
+            <InputDropdown val1="all" lbl1="All" width="70%" />
             <button type="submit">Send message</button>
           </div>
         </div>
