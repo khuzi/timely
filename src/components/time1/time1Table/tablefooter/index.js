@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import ReactPaginate from "react-paginate";
 
-import { InputDropdown } from "../../../shared";
+export function TableFooter({ data, setData }) {
+  const [offset, setOffset] = useState(0);
+  const [perPage] = useState(10);
+  const [pageCount, setPageCount] = useState(0);
 
-export function TableFooter() {
+  const setTableData = () => {
+    const slice = data?.slice(offset, offset + perPage);
+    setData(slice);
+    setPageCount(Math.ceil(data.length / perPage));
+  };
+
+  const handlePageClick = (e) => {
+    const selectedPage = e.selected;
+    setOffset(selectedPage + 1);
+  };
+
+  useEffect(() => {
+    setTableData();
+  }, [offset]);
+
   return (
-    <div className="row mb-100">
-      <div className="col-lg-12">
-        <div className="time-last-list">
-          <div className="time-lastlist-left">
-            <h3>Show entries</h3>
-            <InputDropdown val1="12" lbl1="12" width="100px" />
-          </div>
-          <div className="time-last-list-ri">
-            <a href="/time1">1</a>
-            <a href="/time1">2</a>
-            <a href="/time1">3</a>
-            <a href="/time1">4</a>
-          </div>
-        </div>
+    <div className="row mb-100 mt-10">
+      <div className="col-lg-12 d-flex justify-content-center">
+        <ReactPaginate
+          previousLabel={"prev"}
+          nextLabel={"next"}
+          breakLabel={"..."}
+          breakClassName={"break-me"}
+          pageCount={pageCount}
+          marginPagesDisplayed={2}
+          pageRangeDisplayed={5}
+          onPageChange={handlePageClick}
+          containerClassName={"pagination"}
+          subContainerClassName={"pages pagination"}
+          activeClassName={"active"}
+        />
       </div>
     </div>
   );

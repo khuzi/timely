@@ -1,18 +1,6 @@
 import React from "react";
 
-const data = [
-  "Rose Bush",
-  "Bridget Theriveaquai",
-  "Lynne Gwistic",
-  "Bridget Theriveaquai",
-  "Rose Bush",
-  "Col Fays",
-  "Bridget Theriveaquai",
-  "Lynne Gwistic",
-  "Bridget Theriveaquai",
-];
-
-export function TableBody({ none }) {
+export function TableBody({ none, data }) {
   if (none) {
     return (
       <tbody>
